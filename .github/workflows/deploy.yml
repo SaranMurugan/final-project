@@ -17,6 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
+            sudo rm -rf final-project
             git clone https://github.com/SaranMurugan/final-project.git
             cd final-project
             sudo docker build -t final-app .
