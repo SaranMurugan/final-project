@@ -17,7 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo mkdir final-project
+            mkdir final-project
             cd final-project
             sudo git pull
             sudo docker build -t final-app .
